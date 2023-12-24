@@ -1,8 +1,9 @@
 
 import Image from 'next/image'
 import Logo from '../assets/auth/tt-logo.png'
+import Link from 'next/link'
 
-export default function LoginForm() {
+export default function RegisterForm() {
   return (
     <>
 
@@ -14,12 +15,27 @@ export default function LoginForm() {
             alt="TilsTalk"
           />
           <h2 className="mt-10 text-left text-2xl font-bold leading-9 tracking-tight text-gray-900">
-            Acessar
+            Cadastre-se
           </h2>
         </div>
 
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
           <form className="space-y-6" action="#" method="POST">
+            <div>
+              <label htmlFor="name" className="block text-sm font-medium leading-6 text-gray-900">
+                Nome completo
+              </label>
+              <div className="mt-2">
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  autoComplete="text"
+                  required
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
             <div>
               <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
                 E-mail
@@ -41,31 +57,42 @@ export default function LoginForm() {
                 <label htmlFor="password" className="block text-sm font-medium leading-6 text-gray-900">
                   Senha
                 </label>
+
               </div>
               <div className="mt-2">
                 <input
                   id="password"
                   name="password"
                   type="password"
-                  autoComplete="current-password"
                   required
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
-              <div className="mt-2">
+            </div>
 
+            <div>
+              <div className="flex items-center justify-between">
+                <label htmlFor="confirmPassword" className="block text-sm font-medium leading-6 text-gray-900">
+                  Confirmar senha
+                </label>
 
-                <div className="flex items-center justify-between">
-                  <label htmlFor="password" className="block text-sm font-medium leading-6 text-gray-900">
-
-                  </label>
-                  <div className="text-sm">
-                    <a href="#" className="font-semibold text-indigo-600 hover:text-indigo-500">
-                      Esqueceu sua senha?
-                    </a>
-                  </div>
-                </div>
               </div>
+              <div className="mt-2">
+                <input
+                  id="confirmPassword"
+                  name="confirmPassword"
+                  type="password"
+                  required
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+
+
+            <div className="flex items-start">
+              <span className='text-sm'>
+                Ao prosseguir, você está aceitando os <a href='/' className='text-indigo-600'>Termos de Uso</a> e concordando com nossa <a href='/' className='text-indigo-600'>Política de privacidade</a>.
+              </span>
             </div>
 
             <div>
@@ -73,17 +100,24 @@ export default function LoginForm() {
                 type="submit"
                 className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                Entrar
+                Criar conta
               </button>
             </div>
+
+
           </form>
 
           <p className="mt-10 text-center text-sm text-gray-500">
-            Não possui uma conta?{' '}
-            <a href="/register" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
-              Crie agora
+            Já possui uma conta?{' '}
+            <a href="/" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
+              Entre agora
             </a>
           </p>
+
+          <p className="mt-20 text-center text-sm text-gray-500">
+            © 2023 - Todos os direitos reservados
+          </p>
+
         </div>
       </div>
     </>
