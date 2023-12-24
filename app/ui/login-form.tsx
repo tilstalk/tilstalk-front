@@ -9,7 +9,7 @@ export default function LoginForm() {
       <div className="flex min-h-full  flex-1 flex-col justify-center px-6 py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <Image
-            className="mx-auto h-10 w-auto"
+            className="mx-auto h-12 w-auto"
             src={Logo}
             alt="TilsTalk"
           />
@@ -60,7 +60,7 @@ export default function LoginForm() {
 
                   </label>
                   <div className="text-sm">
-                    <a href="#" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                    <a href="#" className="font-regular text-indigo-600 hover:text-indigo-500">
                       Esqueceu sua senha?
                     </a>
                   </div>
