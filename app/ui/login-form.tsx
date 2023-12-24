@@ -1,6 +1,7 @@
 
 import Image from 'next/image'
 import Logo from '../assets/auth/tt-logo.png'
+import Link from 'next/link'
 
 export default function LoginForm() {
   return (
@@ -9,7 +10,7 @@ export default function LoginForm() {
       <div className="flex min-h-full  flex-1 flex-col justify-center px-6 py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <Image
-            className="mx-auto h-10 w-auto"
+            className="mx-auto h-12 w-auto"
             src={Logo}
             alt="TilsTalk"
           />
@@ -60,7 +61,7 @@ export default function LoginForm() {
 
                   </label>
                   <div className="text-sm">
-                    <a href="#" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                    <a href="#" className="font-regular text-indigo-600 hover:text-indigo-500">
                       Esqueceu sua senha?
                     </a>
                   </div>
@@ -69,12 +70,13 @@ export default function LoginForm() {
             </div>
 
             <div>
-              <button
-                type="submit"
+              <Link href="/dashboard"
+                // type="submit"
+
                 className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Entrar
-              </button>
+              </Link>
             </div>
           </form>
 

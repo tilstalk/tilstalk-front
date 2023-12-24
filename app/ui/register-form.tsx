@@ -10,7 +10,7 @@ export default function RegisterForm() {
       <div className="flex min-h-full  flex-1 flex-col justify-center px-6 py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <Image
-            className="mx-auto h-10 w-auto"
+            className="mx-auto h-12 w-auto"
             src={Logo}
             alt="TilsTalk"
           />
@@ -91,7 +91,7 @@ export default function RegisterForm() {
 
             <div className="flex items-start">
               <span className='text-sm'>
-                Ao prosseguir, você está aceitando os <a href='/' className='text-indigo-600'>Termos de Uso</a> e concordando com nossa <a href='/' className='text-indigo-600'>Política de privacidade</a>.
+                Ao prosseguir, você está aceitando os <a href='/' className='text-indigo-600'>Termos de Uso</a> e concordando com nossa <a href='/' className='text-indigo-600'>Política de Privacidade</a>.
               </span>
             </div>
 
@@ -114,9 +114,6 @@ export default function RegisterForm() {
             </a>
           </p>
 
-          <p className="mt-20 text-center text-sm text-gray-500">
-            © 2023 - Todos os direitos reservados
-          </p>
 
         </div>
       </div>
