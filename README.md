@@ -2,7 +2,7 @@
 
 # Sobre o projeto
 
-Este é o frontend do projeto TilsTalk, desenvolvido com Next.js.
+Este é o frontend do projeto TilsTalk, desenvolvido com Next.js
 
 O projeto TilsTalk é voltado para pessoas surdas, com foco em facilitar o acesso delas à tecnologia. A plataforma terá pouca leitura e será mais visual, com ícones ou imagens para melhor atender esse público.
 
